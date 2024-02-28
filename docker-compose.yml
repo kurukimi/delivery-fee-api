@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+    wolt-app:
+          container_name: wolt-app
+          build:
+            context: app
+            dockerfile: Dockerfile
+          restart: always
+          ports:
+            - "8080:8080"
